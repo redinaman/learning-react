@@ -1,0 +1,66 @@
+Babel is compiler but it need s plugins and presets to compile.
+Such as es2015 adn react. env plugin is package which includes es2015 es2016 and es2017.
+
+Install Babel
+
+Plugins are local dependencies of projects
+Install env
+Install react
+
+Yarn init same as npm init we are going top create package json file
+
+Compaling jsx with Babel
+babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+
+{only javascript expressions work inside this curly parentheses} if else statements are not allowed. 
+As a result of that reason you can use a if-else statements inside a function and call that function inside curly parentheses.
+
+Ternary Operators
+
+if-else
+true ? Anil : 'Someone';
+
+{user.name ? user.name : 'Anonymous'}
+that means if username exists use usertname else use Anonymous.
+
+End Operators
+true && Some Age
+returns Some Age 
+
+that means if the result is true it returns second part of operator Some Age
+If the result is false it returns first parametter.
+
+Let and Const
+
+let
+you can not use let with sama variable name.
+
+let name= anil;
+let name = ayse you can not redefine.
+
+const 
+Same as let but also you can not reassign any value
+
+var has function based scope that means you can not access any value which is inside a function.
+Also same for let and const. But also they have blok level scope. Such as you can not reach the value of i in an for loop.
+
+for(i=0;i>0:i++){
+    
+}
+
+Arrow Function Expressions
+const squareArrow = (x)=>x*x;
+
+JavaScript ES5 Function Arguments
+function total(a,b){
+console.log(arguments) //returns function arguments 55 and 1
+return a + b;
+
+}
+total(a,b);
+
+You can not use arguments in arrow functions.
+
+This
+In ES5(classical javascript) this represents own value.
+In ES6 this represents its parent content.
